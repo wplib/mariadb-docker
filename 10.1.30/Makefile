@@ -4,8 +4,8 @@
 
 PROJECT		?= wplib
 NAME		?= mariadb
-VERSION		?= 5.5.59
-MAJORVERSION	?= 5.5
+VERSION		?= 10.1.30
+MAJORVERSION	?= 10.1
 PORTS		?= -p 3306:3306
 VOLUMES		?= -v /tmp/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb
 ENV		?= 

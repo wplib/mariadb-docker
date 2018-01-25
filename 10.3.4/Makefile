@@ -3,11 +3,11 @@
 # 
 
 PROJECT		?= wplib
-NAME		?= mysql
-VERSION		?= 8.0.3
-MAJORVERSION	?= 8.0
+NAME		?= mariadb
+VERSION		?= 10.3.4
+MAJORVERSION	?= 10.3
 PORTS		?= -p 3306:3306
-VOLUMES		?= -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql
+VOLUMES		?= -v /tmp/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb
 ENV		?= 
 
 LATEST		?= 0
@@ -22,12 +22,12 @@ CONTAINER_NAME	?= $(PROJECT)_$(NAME)_$(VERSION)
 # Image related commands.
 
 build: Dockerfile
-	-docker build -t $(IMAGE_NAME):$(VERSION) --build-arg MYSQL_VERSION=$(VERSION) .
+	-docker build -t $(IMAGE_NAME):$(VERSION) --build-arg MARIADB_VERSION=$(VERSION) .
 ifneq ($(MAJORVERSION),)
-	-docker build -t $(IMAGE_NAME):$(MAJORVERSION) --build-arg MYSQL_VERSION=$(MAJORVERSION) .
+	-docker build -t $(IMAGE_NAME):$(MAJORVERSION) --build-arg MARIADB_VERSION=$(MAJORVERSION) .
 endif
 ifeq ($(LATEST),1)
-	docker build -t $(IMAGE_NAME):latest --build-arg MYSQL_VERSION=latest .
+	docker build -t $(IMAGE_NAME):latest --build-arg MARIADB_VERSION=latest .
 endif
 
 push:

@@ -1,4 +1,4 @@
-FROM mysql:8.0.3
+FROM mariadb:10.0.33
 MAINTAINER WPLib Team <team@wplib.org>
 
 COPY files /

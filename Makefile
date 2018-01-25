@@ -2,7 +2,7 @@
 # Makefile for Docker
 # 
 
-VERSIONS = 5.5.59 5.6.21 5.7.21 8.0.3
+VERSIONS = 5.5.59 10.0.33 10.1.30 10.2.12 10.3.4
 
 BASEDIR = $(shell pwd)
 
