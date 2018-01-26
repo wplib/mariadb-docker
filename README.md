@@ -1,4 +1,4 @@
-# MariaDB Docker Container for wplib
+# MariaDB Docker Container for WPLib Box
 This is the repository for the [mariadb-docker](https://www.mariadb.com/) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
 It currently provides versions 5.5.59 10.0.33 10.1.30 10.2.12 10.3.4
 
