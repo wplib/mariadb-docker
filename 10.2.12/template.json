@@ -1,0 +1,12 @@
+{
+	"project": "wplib",
+	"name": "mariadb",
+	"version": "10.2.12",
+	"majorversion": "10.2",
+	"latest": "1",
+	"ports": "-p 3306:3306",
+	"volumes": "-v /tmp/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb",
+	"args": "",
+	"env": "MARIADB_VERSION"
+}
+
