@@ -17,7 +17,7 @@ ARGS		:= $(call GetFromPkg,args)
 ENV		:= $(call GetFromPkg,env)
 
 IMAGE_NAME	?= $(PROJECT)/$(NAME)
-CONTAINER_NAME	?= $(PROJECT)_$(NAME)_$(VERSION)
+CONTAINER_NAME  ?= $(NAME)-$(VERSION)
 
 
 .PHONY: build push release clean shell run start stop rm
