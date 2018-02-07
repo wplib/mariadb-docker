@@ -8,7 +8,7 @@
 	"ports": "-p 3306:3306",
 	"volumes": "-v /tmp/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb",
 	"restart": "--restart unless-stopped",
-	"args": "",
+	"args": "-e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress",
 	"env": "MARIADB_VERSION"
 }
 
