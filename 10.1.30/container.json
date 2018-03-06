@@ -4,6 +4,7 @@
 	"version": "10.1.30",
 	"majorversion": "10.1",
 	"latest": "",
+	"class": "database",
 	"network": "--network wplibbox",
 	"ports": "-p 3306:3306",
 	"volumes": "-v /tmp/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb",
