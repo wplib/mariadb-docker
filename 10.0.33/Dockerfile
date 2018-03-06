@@ -1,6 +1,7 @@
 FROM mariadb:10.0.33
 MAINTAINER WPLib Team <team@wplib.org>
 
+COPY container.json /etc/container.json
 COPY files /
 
 ENV MYSQL_ALLOW_EMPTY_PASSWORD=yes
