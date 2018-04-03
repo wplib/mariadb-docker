@@ -48,7 +48,7 @@ A simple `docker pull wplib/mariadb` will pull down the latest version.
 ### Runtime from Docker Hub
 start - Spin up a Docker container with the correct runtime configs.
 
-`docker run -d --name wplib_mariadb_10.3.4 --restart unless-stopped --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4`
+`docker run -d --name wplib_mariadb_10.3.4 --restart unless-stopped --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4`
 
 stop - Stop a Docker container.
 
@@ -56,11 +56,11 @@ stop - Stop a Docker container.
 
 run - Run a Docker container in the foreground, (all STDOUT and STDERR will go to console). The Container be removed on termination.
 
-`docker run --rm --name wplib_mariadb_10.3.4 --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4`
+`docker run --rm --name wplib_mariadb_10.3.4 --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4`
 
 shell - Run a shell, (/bin/bash), within a Docker container.
 
-`docker run --rm --name wplib_mariadb_10.3.4 -i -t --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4 /bin/bash`
+`docker run --rm --name wplib_mariadb_10.3.4 -i -t --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4 /bin/bash`
 
 rm - Remove the Docker container.
 
