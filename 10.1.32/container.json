@@ -1,7 +1,7 @@
 {
 	"project": "wplib",
 	"name": "mariadb",
-	"version": "10.1.31",
+	"version": "10.1.32",
 	"majorversion": "10.1",
 	"latest": "",
 	"class": "database",

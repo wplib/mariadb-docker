@@ -12,20 +12,20 @@
 
 # MariaDB Docker Container for WPLib Box
 This is the repository for the [mariadb-docker](https://www.mariadb.com/) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
-It currently provides versions 5.5.59 10.0.34 10.1.31 10.2.13 10.3.4
+It currently provides versions 5.5.60 10.0.34 10.1.32 10.2.14 10.3.6
 
 
 ## Supported tags and respective Dockerfiles
 
-`10.3.4`, `10.3` _([10.3.4/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/10.3.4/Dockerfile))_
+`10.3.6`, `10.3` _([10.3.6/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/10.3.6/Dockerfile))_
 
-`10.2.13`, `10.2`, `latest` _([10.2.13/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/10.2.13/Dockerfile))_
+`10.2.14`, `10.2`, `latest` _([10.2.14/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/10.2.14/Dockerfile))_
 
-`10.1.31`, `10.1` _([10.1.31/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/10.1.31/Dockerfile))_
+`10.1.32`, `10.1` _([10.1.32/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/10.1.32/Dockerfile))_
 
 `10.0.34`, `10.0` _([10.0.34/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/10.0.34/Dockerfile))_
 
-`5.5.59`, `5.5` _([5.5.59/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/5.5.59/Dockerfile))_
+`5.5.60`, `5.5` _([5.5.60/Dockerfile](https://github.com/wplib/mariadb-docker/blob/master/5.5.60/Dockerfile))_
 
 
 ## Using this container.
@@ -48,23 +48,23 @@ A simple `docker pull wplib/mariadb` will pull down the latest version.
 ### Runtime from Docker Hub
 start - Spin up a Docker container with the correct runtime configs.
 
-`docker run -d --name wplib_mariadb_10.3.4 --restart unless-stopped --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4`
+`docker run -d --name wplib_mariadb_10.3.6 --restart unless-stopped --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.6`
 
 stop - Stop a Docker container.
 
-`docker stop wplib_mariadb_10.3.4`
+`docker stop wplib_mariadb_10.3.6`
 
 run - Run a Docker container in the foreground, (all STDOUT and STDERR will go to console). The Container be removed on termination.
 
-`docker run --rm --name wplib_mariadb_10.3.4 --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4`
+`docker run --rm --name wplib_mariadb_10.3.6 --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.6`
 
 shell - Run a shell, (/bin/bash), within a Docker container.
 
-`docker run --rm --name wplib_mariadb_10.3.4 -i -t --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.4 /bin/bash`
+`docker run --rm --name wplib_mariadb_10.3.6 -i -t --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mariadb_data:/var/lib/mariadb wplib/mariadb:10.3.6 /bin/bash`
 
 rm - Remove the Docker container.
 
-`docker container rm wplib_mariadb_10.3.4`
+`docker container rm wplib_mariadb_10.3.6`
 
 
 ## Using it from GitHub repo

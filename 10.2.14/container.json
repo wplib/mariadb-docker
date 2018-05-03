@@ -1,9 +1,9 @@
 {
 	"project": "wplib",
 	"name": "mariadb",
-	"version": "10.3.4",
-	"majorversion": "10.3",
-	"latest": "",
+	"version": "10.2.14",
+	"majorversion": "10.2",
+	"latest": "1",
 	"class": "database",
 	"network": "--network wplibbox",
 	"ports": "-p 3306:3306",

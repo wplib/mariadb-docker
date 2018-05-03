@@ -1,4 +1,4 @@
-FROM mariadb:10.3.4
+FROM mariadb:10.2.14
 MAINTAINER WPLib Team <team@wplib.org>
 
 COPY container.json /etc/container.json
