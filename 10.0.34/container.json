@@ -7,7 +7,7 @@
 	"class": "database",
 	"network": "--network wplibbox",
 	"ports": "-p 3306:3306",
-	"volumes": "-v /vagrant/sql:/vagrant/sql -v /vagrant/provision:/docker-entrypoint-initdb.d -v mariadb-10.0:/var/lib/mariadb",
+	"volumes": "-v /projects/wplib.box/sql:/projects/wplib.box/sql -v /projects/wplib.box/provision:/docker-entrypoint-initdb.d -v mariadb-10.0:/var/lib/mariadb",
 	"restart": "--restart no",
 	"args": "-e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress",
 	"env": "MARIADB_VERSION"
